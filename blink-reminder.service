@@ -1,0 +1,13 @@
+[Unit]
+Description=Blink Reminder Service
+After=user.target
+
+[Service]
+Type=simple
+Restart=no
+ExecStart=/usr/bin/python3 /home/karthikmsd/Code/random/blink-reminder/blink_reminder.py
+Environment="PYTHONPATH=/home/karthikmsd/.local/lib/python3.10/site-packages"
+WorkingDirectory=/home/karthikmsd/Code/random/blink-reminder/
+
+[Install]
+WantedBy=multi-user.target
