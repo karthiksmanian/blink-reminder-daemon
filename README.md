@@ -32,7 +32,7 @@ Environment="PYTHONPATH=/home/karthikmsd/.local/lib/python3.10/site-packages"
 WorkingDirectory=/home/karthikmsd/Code/random/blink-reminder/
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target
 ```
 
 ### Step 3
